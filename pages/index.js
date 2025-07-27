@@ -46,7 +46,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Join Our Waiting List</title>
+        {/*
+         * Update the page title to reflect the brand name.
+         * Stratloom is the name of the product, so we prefix the title with it
+         * for better brand recognition in the browser tab and search results.
+         */}
+        <title>Stratloom - Join Our Waiting List</title>
         <meta
           name="description"
           content="Sign up to join our waiting list for the latest updates and news."
@@ -54,9 +59,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className="hero">
-        <h1>Be the First to Know</h1>
+        {/*
+         * Display the brand name prominently in the hero section instead of
+         * a generic headline. This helps users immediately associate the
+         * waiting list with Stratloom.
+         */}
+        <h1>Stratloom</h1>
+        {/*
+         * Update the tagline to mention Stratloom explicitly and refer to
+         * the list as a "waitlist" for clarity.
+         */}
         <p>
-          We're launching something exciting soon! Join our waiting list to stay
+          We're launching something exciting soon! Join the Stratloom waitlist to stay
           updated and get exclusive early access.
         </p>
         {!submitted ? (
